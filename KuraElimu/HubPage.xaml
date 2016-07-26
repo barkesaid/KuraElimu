@@ -5,11 +5,6 @@
     xmlns:local="using:KuraElimu"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:esri="using:Esri.ArcGISRuntime.Controls"
-	xmlns:layers="using:Esri.ArcGISRuntime.Layers"
-	xmlns:data="using:Esri.ArcGISRuntime.Data"
-	xmlns:symb="using:Esri.ArcGISRuntime.Symbology"
-	xmlns:geom="using:Esri.ArcGISRuntime.Geometry"
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     d:DataContext="{Binding Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
     mc:Ignorable="d">
@@ -120,23 +115,7 @@
                     </GridView>
                 </DataTemplate>
             </HubSection>
-<!-- start of test -->
-               <HubSection x:Uid="HubSection3" Header="Where to vote" Width="Auto"
-                         DataContext="{Binding Groups[0]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
-                <DataTemplate>
-                    <GridView>
-                        <StackPanel>
-  <!--put map code here-->
-                                         
-                        </StackPanel>
 
-                    </GridView>
-                </DataTemplate>
-            </HubSection>
-            
-            <!--end of test
-            vote-->
-           
             <HubSection x:Uid="HubSection5" Header="Find a Polling Station"
                         DataContext="{Binding Groups[3]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
                 <DataTemplate>
