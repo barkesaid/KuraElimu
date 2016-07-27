@@ -116,7 +116,7 @@
                 </DataTemplate>
             </HubSection>
 
-            <HubSection x:Uid="HubSection5" Header="Find a Polling Station"
+            <HubSection x:Uid="HubSection5" Header="The Political System"
                         DataContext="{Binding Groups[3]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
                 <DataTemplate>
                     <ListView 
@@ -130,7 +130,7 @@
                         ContinuumNavigationTransitionInfo.ExitElementContainer="True">
                     </ListView>
                 </DataTemplate>
-            </HubSection>
+            </HubSection> 
 
 
             <HubSection x:Uid="HubSection4" Header="Vying Candidates"
@@ -155,6 +155,8 @@
                     </ListView>
                 </DataTemplate>
             </HubSection>
+            
+            
         </Hub>
     </Grid>
 </Page>
